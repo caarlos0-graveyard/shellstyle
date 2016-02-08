@@ -59,3 +59,12 @@ to be executables.
 - Avoid option flags and parsing, try optional environment variables instead.
 - In large systems or for any CLI commands, add a description to functions.
 - When expecting or exporting environment, consider namespacing variables when subshells may be involved.
+
+## Examples
+
+TODO
+
+## Foot notes
+
+This document is heavely based on [progrium/bashstyle](https://github.com/progrium/bashstyle), so you
+might recognize some of its language.
