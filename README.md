@@ -45,3 +45,17 @@ Example: `declare arg1="$1" arg2="$2"`
 - Use `mktemp` for temporary files, always cleanup with a `trap`.
 - Warnings and errors should go to `STDERR`, anything parsable should go to `STDOUT`.
 
+## Best practices and tips
+
+- Generally use double quotes unless it makes more sense to use single quotes.
+- For simple conditionals, try using `&&` and `||`.
+- Prefer `printf` over `echo` (`echo` may work differently depending on platform).
+- Put `then`, `do`, etc on same line, not newline.
+- Use `.sh` be included/sourced. Never on executable script. Also, sourceables don't need
+to be executables.
+- Put complex one-liners of `sed`, `perl`, etc in a standalone function with a descriptive name.
+- Good idea to include `[ "$TRACE" ] && set -x`.
+- Design for simplicity and obvious usage. Remember the concept of piping.
+- Avoid option flags and parsing, try optional environment variables instead.
+- In large systems or for any CLI commands, add a description to functions.
+- When expecting or exporting environment, consider namespacing variables when subshells may be involved.
