@@ -68,3 +68,9 @@ TODO
 
 This document is heavely based on [progrium/bashstyle](https://github.com/progrium/bashstyle), so you
 might recognize some of its language.
+
+## Team
+
+[![Carlos Becker](https://avatars.githubusercontent.com/u/245435?v=3&s=100)](http://carlosbecker.com) | [![Aurelio Jargas](https://avatars.githubusercontent.com/u/282592?v=3&s=100)](http://aurelio.net)
+---|---
+[Carlos Becker](http://carlosbecker.com) | [Aurelio Jargas](http://aurelio.net)
