@@ -67,6 +67,6 @@ might recognize some of its language.
 
 ## Team
 
-[![Carlos Becker](https://avatars.githubusercontent.com/u/245435?v=3&s=100)](http://carlosbecker.com) | [![Aurelio Jargas](https://avatars.githubusercontent.com/u/282592?v=3&s=100)](http://aurelio.net)
+[![Aurelio Jargas](https://avatars.githubusercontent.com/u/282592?v=3&s=100)](http://aurelio.net) | [![Carlos Becker](https://avatars.githubusercontent.com/u/245435?v=3&s=100)](http://carlosbecker.com)
 ---|---
-[Carlos Becker](http://carlosbecker.com) | [Aurelio Jargas](http://aurelio.net)
+[Aurelio Jargas](http://aurelio.net) | [Carlos Becker](http://carlosbecker.com)
