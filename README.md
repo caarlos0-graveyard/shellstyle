@@ -29,14 +29,10 @@ This rule gets you pretty far.
 - All code goes in a function. Even if it's one function, `main`.
 Unless a library script, you can do global script settings and call `main`
 or `main "$@"`.
-- Avoid global variables. Though when defining constants use readonly.
-// - Always use local when setting variables, unless there is reason to use declare
-// Exception being rare cases when you are intentionally setting a variable in an outer scope.
 - Variable names should be lowercase unless exported to environment.
 - Always use `set -eo pipefail`. Fail fast and be aware of exit codes.
 Use `|| true` on programs that you intentionally let exit non-zero.
 - Never use some shell-specific style. Most notably:
-  - `local`.
   - `[[`, use `test` or `[` instead.
   - Never use backticks, use `$( ... )`.
 - Prefer absolute paths (leverage `$PWD`), always qualify relative paths with `./`.
