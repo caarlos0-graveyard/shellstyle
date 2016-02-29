@@ -47,10 +47,10 @@ Example: `declare arg1="$1" arg2="$2"`
 - For simple conditionals, try using `&&` and `||`.
 - Prefer `printf` over `echo` (`echo` may work differently depending on platform).
 - Put `then`, `do`, etc on same line, not newline.
-- Use `.sh` be included/sourced. Never on executable script. Also, sourceables don't need
-to be executables.
+- Use `.sh` suffix only in files to be included/sourced, never on executable scripts.
+Also, sourceables don't need to be executables.
 - Put complex one-liners of `sed`, `perl`, etc in a standalone function with a descriptive name.
-- Good idea to include `[ "$TRACE" ] && set -x`.
+- Good idea to include `test -n "$TRACE" && set -x`.
 - Design for simplicity and obvious usage. Remember the concept of piping.
 - Avoid option flags and parsing, try optional environment variables instead.
 - In large systems or for any CLI commands, add a description to functions.
