@@ -40,6 +40,9 @@ Use `|| true` on programs that you intentionally let exit non-zero.
 Example: `declare arg1="$1" arg2="$2"`
 - Use `mktemp` for temporary files, always cleanup with a `trap`.
 - Warnings and errors should go to `STDERR`, anything parsable should go to `STDOUT`.
+- **Always lint your scripts**. [Shellcheck](https://github.com/koalaman/shellcheck)
+does an awesome job on it. I also recommend
+[running it in your CI builds](http://carlosbecker.com/posts/lint-shell-scripts).
 
 ## Best practices and tips
 
