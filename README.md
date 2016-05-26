@@ -19,8 +19,9 @@ This document is how I write shell and how I'd like collaborators to write shell
 with me in my open source projects. It's based on a lot of experience and time
 collecting best practices.
 
-Keep in mind that these rules are made for based on the assumption you want
-to write shell scripts that work ~everywhere~, not specifically Bash or ZSH.
+Keep in mind that these rules are defined based on the assumption that you want
+to write portable shell scripts, meaning, scripts that work ~everywhere~, 
+not specifically BASH v3.2 on Linux nor ZSH 5.2 on OSX.
 
 ## Big Rules
 
@@ -58,6 +59,7 @@ Also, sourceables don't need to be executables.
 - Avoid option flags and parsing, try optional environment variables instead.
 - In large systems or for any CLI commands, add a description to functions.
 - When expecting or exporting environment, consider namespacing variables when subshells may be involved.
+- Beware that GNU sed (and many others) may work differently from BSD sed.
 
 ## Examples
 
